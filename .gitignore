@@ -42,3 +42,15 @@ next-env.d.ts
 # vendor source (do not commit)
 /Velzon-Admin
 
+# docker volumes/data (if created locally)
+/infra/docker/data
+/infra/docker/postgres_data
+/infra/docker/redis_data
+
+# SQLite database files
+data/*.sqlite
+data/*.db
+data/*.sqlite-journal
+data/*.sqlite-wal
+data/*.sqlite-shm
+

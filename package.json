@@ -9,7 +9,11 @@
     "build:all": "npm run build && npm run build:server",
     "start": "node dist/server.js",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "infra:up": "docker compose -f infra/docker/docker-compose.dev.yml up -d",
+    "infra:down": "docker compose -f infra/docker/docker-compose.dev.yml down",
+    "infra:logs": "docker compose -f infra/docker/docker-compose.dev.yml logs -f",
+    "env:check": "node -e \"console.log('DB_PROVIDER=', process.env.DB_PROVIDER || 'not set'); console.log('DATABASE_URL=', process.env.DATABASE_URL || 'not set')\""
   },
   "dependencies": {
     "next": "^16.0.0",
