@@ -16,7 +16,7 @@
     "env:check": "node -e \"console.log('DB_PROVIDER=', process.env.DB_PROVIDER || 'not set'); console.log('DATABASE_URL=', process.env.DATABASE_URL || 'not set')\""
   },
   "dependencies": {
-    "next": "^16.0.0",
+    "next": "^16.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
